@@ -1,0 +1,15 @@
+<h4>
+    {{title}}
+</h4>
+<p>
+    {{description}}
+</p>
+{{#unless isEditing}}
+<button class="btn btn-success" {{action 'edit'}}>Edit</button>
+{{/unless}}
+
+{{#if isEditing}}
+{{partial 'posts/form_fields'}}
+<button class="btn btn-success" {{action 'cancel'}}>Cancel</button>
+{{/if}}
+{{outlet}}

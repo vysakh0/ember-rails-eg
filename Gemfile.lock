@@ -234,7 +234,6 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass (~> 2.3.2.2)
   capybara
-  coffee-rails (~> 4.0.0)
   database_cleaner (= 1.0.1)
   devise
   email_spec
@@ -244,6 +243,7 @@ DEPENDENCIES
   guard-bundler
   guard-rails
   guard-rspec
+  handlebars-source (~> 1.0.12)
   jbuilder (~> 1.2)
   jquery-rails
   pundit

@@ -1,0 +1,9 @@
+{{#link-to 'posts.new' class="btn btn-success"}} Create new {{/link-to}}
+{{outlet}}
+
+{{#each model}}
+<h3>
+    {{#link-to 'post' this}} {{title}} {{/link-to}}
+</h3>
+<p>{{description}}</p>
+{{/each}}

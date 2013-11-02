@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @how.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @how.description %>
+</p>
+
+<%= link_to 'Edit', edit_how_path(@how) %> |
+<%= link_to 'Back', hows_path %>

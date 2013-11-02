@@ -14,4 +14,13 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require ember_rails_auth
+
+// for more details see: http://emberjs.com/guides/application/
+EmberRailsAuth = Ember.Application.create();
+
 //= require_tree .

@@ -1,0 +1,7 @@
+<form {{action 'save' on="submit"}}>
+    {{view Ember.TextField valueBinding="title" id="title" placeholder="Title" required="true"}}<br />
+    {{view Ember.TextArea valueBinding="description" id="description" placeholder="Body" required="true"}}<br />
+
+    <button class="btn btn-success"  type="submit">Save</button>
+</form>
+
