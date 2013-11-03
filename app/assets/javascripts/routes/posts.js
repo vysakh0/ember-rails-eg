@@ -1,13 +1,17 @@
-EmberRailsAuth.PostsRoute = Ember.Route.extend({
+App.PostsRoute = Ember.Route.extend({
   model: function () {
-    return EmberRailsAuth.Post.find();
+    return App.Post.find();
   }
 
 });
 
-EmberRailsAuth.PostRoute = Ember.Route.extend({
+App.PostRoute = Ember.Route.extend({
   model: function (params) {
-    console.log("cool");
     return this.get('store').find('post', params.post_id);
+  },
+});
+App.NewPostRoute = Ember.Route.extend({
+  model: function (params) {
+    return App.Post.createRecord();
   },
 });

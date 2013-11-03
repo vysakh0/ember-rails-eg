@@ -1,4 +1,4 @@
-EmberRailsAuth.PostsNewController= Ember.Controller.extend({
+App.PostsNewController= Ember.Controller.extend({
   actions: {
     save: function () {
       var title = this.get('title');
@@ -8,14 +8,15 @@ EmberRailsAuth.PostsNewController= Ember.Controller.extend({
         title: title,
         description: description
       }
-      this.set('model', EmberRailsAuth.Post.createRecord(record));
+      this.set('model', App.Post.createRecord(record));
 
       store.commit();
+      this.transitionToRoute('posts');
     }
   }
 });
 
-EmberRailsAuth.PostController= Ember.ObjectController.extend({
+App.PostController= Ember.ObjectController.extend({
   isEditing: false,
 
   actions: {

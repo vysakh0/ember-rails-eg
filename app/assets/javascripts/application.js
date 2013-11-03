@@ -18,9 +18,9 @@
 //= require ember
 //= require ember-data
 //= require_self
-//= require ember_rails_auth
+//= require app
 
 // for more details see: http://emberjs.com/guides/application/
-EmberRailsAuth = Ember.Application.create();
+App = Ember.Application.create();
 
 //= require_tree .

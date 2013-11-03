@@ -1,6 +1,6 @@
 // For more information see: http://emberjs.com/guides/routing/
 
-EmberRailsAuth.Router.map(function() {
+App.Router.map(function() {
   // this.resource('posts');
   this.resource('about');
   this.resource('posts', function () {
